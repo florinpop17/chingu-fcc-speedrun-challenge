@@ -12,12 +12,11 @@ class App extends Component {
     render() {
         var {quotes} = this.state;
 
-        quotes = quotes.map((quote, idx) => <li key={idx}><h3>{ quote.quote }</h3><small>{quote.author}</small></li>);
+        quotes = quotes.map((quote, idx) => <li className="quote" key={idx}><h1>{ quote.quote }</h1><small>{quote.author}</small></li>);
         return (
-            <div>
-                <h1>Welcome to the Random Quote Generator!</h1>
+            <div className="container">
                 <ul>
-                    { quotes }
+                    { quotes[0] }
                 </ul>
             </div>
         );

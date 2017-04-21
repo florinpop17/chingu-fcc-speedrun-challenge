@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body, #root {
+    height: 100%;
+}
+
+body {
+    background-color: rgba(231, 76, 60, 0.8);
+    font-family: Roboto sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 100%;
+}
+
+.container {
+    width: 80%;
+    margin-left: 10%;
+    height: 100%;
+}
+
+.quote {
+    background-color: rgba(231, 76, 60, 1.0);
+    color: #eeeeee;
+    padding: 30px;
+    margin: auto;
+}
+
+.quote h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.quote small {
+    font-size: 18px;
+}
