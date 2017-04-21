@@ -11,3 +11,5 @@ Build an app that is functionally similar to this: https://codepen.io/FreeCodeCa
 * User Story: I can press a button to tweet out a quote.
 
 ## Notes
+
+- used create-react-app
