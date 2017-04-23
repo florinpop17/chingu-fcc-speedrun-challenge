@@ -33,9 +33,9 @@ class App extends Component {
         let quote = this.state.quotes[this.state.currentQuote];
 
         quote = <li className="quote">
-            <h1>{ quote.quote }</h1>
-            <small>{quote.author}</small>
-            <div className="buttons"><button onClick={this.getNewQuote}>New Quote</button><button onClick={this.tweet}>Tweet</button></div>
+            <h1><i className="fa fa-quote-right"></i> { quote.quote }</h1>
+            <small>- {quote.author}</small>
+            <div className="buttons"><button onClick={this.getNewQuote}>New Quote</button><button onClick={this.tweet}><i className="fa fa-twitter"></i></button></div>
         </li>;
 
         return (
