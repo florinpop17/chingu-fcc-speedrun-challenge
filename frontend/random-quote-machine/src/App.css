@@ -32,6 +32,13 @@ ul {
     height: 100%;
 }
 
+@media (max-width: 768px){
+    .container {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
 .quote {
     background-color: #eeeeee;
     color: var(--main-color);
