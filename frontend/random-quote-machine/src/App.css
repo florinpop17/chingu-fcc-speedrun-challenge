@@ -4,12 +4,16 @@
     box-sizing: border-box;
 }
 
+:root {
+    --main-color: #2980b9;
+}
+
 html, body, #root {
     height: 100%;
 }
 
 body {
-    background-color: rgba(231, 76, 60, 0.8);
+    background-color: var(--main-color);
     font-family: Roboto sans-serif;
 }
 
@@ -29,10 +33,10 @@ ul {
 }
 
 .quote {
-    background-color: rgba(231, 76, 60, 1.0);
-    color: #eeeeee;
+    background-color: #eeeeee;
+    color: var(--main-color);
     padding: 30px;
-    margin: auto;
+    width: 100%;
 }
 
 .quote h1 {
@@ -42,4 +46,17 @@ ul {
 
 .quote small {
     font-size: 18px;
+}
+
+button {
+    background-color: var(--main-color);
+    border: 0;
+    color: #eeeeee;
+    font-size: 16px;
+    padding: 10px 15px;
+    margin-top: 15px;
+}
+
+button:last-of-type {
+    float: right;
 }

@@ -13,3 +13,4 @@ Build an app that is functionally similar to this: https://codepen.io/FreeCodeCa
 ## Notes
 
 - used create-react-app
+- learned about css variables
