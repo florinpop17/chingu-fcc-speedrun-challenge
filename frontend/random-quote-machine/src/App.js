@@ -10,9 +10,19 @@ class App extends Component {
         }
 
         this.getNewQuote = this.getNewQuote.bind(this);
+        this.tweet = this.tweet.bind(this);
     }
 
-    getNewQuote(){
+    tweet() {
+        const quote = this.state.quotes[this.state.currentQuote];
+        let twText = "https://twitter.com/intent/tweet?hashtags=quotes&text=\"";
+        twText += quote.quote;
+        twText += "\" ";
+        twText += quote.author;
+        window.open(twText, '_blank');
+    }
+
+    getNewQuote() {
         const { quotes } = this.state;
         const max = quotes.length;
         const random = Math.floor(Math.random() * max);
@@ -20,12 +30,12 @@ class App extends Component {
     }
 
     render() {
-        var quote = this.state.quotes[this.state.currentQuote];
+        let quote = this.state.quotes[this.state.currentQuote];
 
         quote = <li className="quote">
             <h1>{ quote.quote }</h1>
             <small>{quote.author}</small>
-            <div className="buttons"><button onClick={this.getNewQuote}>New Quote</button><button><i className="fa fa-twitter"></i></button></div>
+            <div className="buttons"><button onClick={this.getNewQuote}>New Quote</button><button onClick={this.tweet}>Tweet</button></div>
         </li>;
 
         return (
