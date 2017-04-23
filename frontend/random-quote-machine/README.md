@@ -14,3 +14,4 @@ Build an app that is functionally similar to this: https://codepen.io/FreeCodeCa
 
 - used create-react-app
 - learned about css variables
+- live [here](www.florin-pop.com/work/Random%20Quotes/)
