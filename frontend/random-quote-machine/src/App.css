@@ -18,13 +18,13 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     height: 100%;
 }
 
 .container {
-    width: 80%;
-    margin-left: 10%;
+    width: 70%;
+    margin-left: 15%;
     height: 100%;
 }
 
