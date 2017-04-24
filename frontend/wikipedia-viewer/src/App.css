@@ -39,7 +39,7 @@ li:hover {
     padding-right: 50px;
 }*/
 
-li:hover a {
+li:hover a, li:focus a {
     display: flex;
     right: 0;
     width: 50px;
@@ -122,5 +122,23 @@ button:active {
         margin-left: 2.5%;
         margin-right: 2.5%;
         width: 20%;
+    }
+
+    li:hover a {
+        width: 125px;
+    }
+
+    li a {
+        font-size: 14px;
+        flex-direction: row;
+        justify-content: space-around;
+        position: static;
+        padding: 5px 10px;
+        margin: 10px 0 0;
+        width: 125px;
+    }
+
+    li a::after {
+        content: 'Read More';
     }
 }
