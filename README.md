@@ -68,7 +68,7 @@ Copy this table as needed to make a separate table for each team member for reco
 |      |  [ ]()  | [Build a Personal Portfolio Webpage](./frontend/portfolio) |  |
 | [live](http://www.florin-pop.com/work/Random%20Quote/) | [post](https://medium.com/@popflorin1705/chingu-speedrun-1-random-quote-machine-11f8b4712e3a)   | [Build a Random Quote Machine](./frontend/random-quote-machine) |  |
 |      |  [ ]()  | [Show the Local Weather](./frontend/local-weather) |  |
-| [live](http://www.florin-pop.com/work/Wikipedia%20Viewer/) |  [ ]()  | [Build a Wikipedia Viewer](./frontend/wikipedia-viewer) |  |
+| [live](http://www.florin-pop.com/work/Wikipedia%20Viewer/) |  [post](https://medium.com/@popflorin1705/speedrun-challenge-2-wikipedia-viewer-d01a32da37f0)  | [Build a Wikipedia Viewer](./frontend/wikipedia-viewer) |  |
 |      |  [ ]()  | [Use the Twitch.tv JSON API](./frontend/twitch-client) |  |
 |      |  [ ]()  | [Build a JavaScript Calculator](./frontend/calculator) |  |
 |      |  [ ]()  | [Build a Pomodoro Clock](./frontend/pomodoro-clock) |  |
