@@ -10,6 +10,7 @@ class App extends Component {
     }
 
     this.getWiki = this.getWiki.bind(this);
+    this.randomWiki = this.randomWiki.bind(this);
   }
 
   getWiki() {
@@ -20,6 +21,10 @@ class App extends Component {
     }).then((response) => {
       this.setState({wiki:response});
     })
+  }
+
+  randomWiki() {
+    window.open('https://en.wikipedia.org/wiki/Special:Random');
   }
 
   componentDidMount() {
@@ -44,7 +49,10 @@ class App extends Component {
 
     return (
       <div className="container">
-        <input type="text" placeholder="Search wikipedia" ref="search" onChange={ this.getWiki }/>
+        <div className="actions">
+          <input type="text" placeholder="Search wikipedia" ref="search" onChange={ this.getWiki }/>
+          <button onClick={ this.randomWiki }><i className="fa fa-random"></i></button>
+        </div>
         <ul>
           { wikiList }
         </ul>

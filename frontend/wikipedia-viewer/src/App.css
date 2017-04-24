@@ -14,6 +14,7 @@ body {
 .container {
     margin: 0 auto;
     width: 960px;
+    max-width: 100%;
 }
 
 ul {
@@ -54,7 +55,7 @@ li p {
 }
 
 li a {
-    background-color: rgba(200,65,81,1);
+    background-color: #AF2838;
     color: #ffffff;
     display: flex;
     align-items: center;
@@ -72,6 +73,10 @@ li a {
     text-align: center;
 }
 
+.actions {
+    position: relative;
+}
+
 input {
     border: 2px solid #3E4852;
     color: #3E4852;
@@ -80,10 +85,42 @@ input {
     font-size: 20px;
     padding: 10px 15px;
     margin: 30px auto;
-    width: 480px;
+    width: 50%;
 }
 
-input:focus {
+input:focus, button:focus{
     border-color: #C84151;
     outline: none;
+}
+
+button {
+    background-color: #AF2838;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 15px;
+    position: absolute;
+    top: 0;
+    right: 180px
+}
+
+button:active {
+    background-color: #C84151;
+}
+
+@media (max-width: 960px){
+    input {
+        display: inline-block;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        width: 70%;
+    }
+
+    button {
+        position: static;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        width: 20%;
+    }
 }
