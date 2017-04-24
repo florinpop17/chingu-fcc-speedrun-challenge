@@ -62,7 +62,7 @@ Who can make the most complete and professional looking portfolio in Phase 2?
 Copy this table as needed to make a separate table for each team member for recording blog posts
 
 | Complete | Blog Post |Project  |
-|----------|---------|----------|
+|:----------:|:---------:|----------|
 |      | N/A| [Comprehensive Portfolio as a Single Page App](./portfolio) |   |
 |      |  [ ]()  | [Build a Tribute Page](./frontend/tribute-page) |  |
 |      |  [ ]()  | [Build a Personal Portfolio Webpage](./frontend/portfolio) |  |
