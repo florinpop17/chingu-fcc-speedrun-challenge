@@ -25,7 +25,7 @@ Integrate all of the FCC Projects you created in Phase 1 into one comprehensive 
 
 Current challenge - [Countdown Clock](https://countingdownto.com/countdown/chingu-fcc-speedrun-challenge-april-may-2017-countdown-clock)    
 
-Original challenge - Completed in March 2017 - [Countdown Clock](https://countingdownto.com/countdown/chingu-fcc-speedrun-challenge-countdown-clock) 
+Original challenge - Completed in March 2017 - [Countdown Clock](https://countingdownto.com/countdown/chingu-fcc-speedrun-challenge-countdown-clock)
 
 
 ### The Rules
@@ -66,9 +66,9 @@ Copy this table as needed to make a separate table for each team member for reco
 |      | N/A| [Comprehensive Portfolio as a Single Page App](./portfolio) |   |
 |      |  [ ]()  | [Build a Tribute Page](./frontend/tribute-page) |  |
 |      |  [ ]()  | [Build a Personal Portfolio Webpage](./frontend/portfolio) |  |
-| [live](http://www.florin-pop.com/work/Random%20Quote/) | [post]()   | [Build a Random Quote Machine](./frontend/random-quote-machine) |  |
+| [live](http://www.florin-pop.com/work/Random%20Quote/) | [post](https://medium.com/@popflorin1705/chingu-speedrun-1-random-quote-machine-11f8b4712e3a)   | [Build a Random Quote Machine](./frontend/random-quote-machine) |  |
 |      |  [ ]()  | [Show the Local Weather](./frontend/local-weather) |  |
-|      |  [ ]()  | [Build a Wikipedia Viewer](./frontend/wikipedia-viewer) |  |
+| [live](http://www.florin-pop.com/work/Wikipedia%20Viewer/) |  [ ]()  | [Build a Wikipedia Viewer](./frontend/wikipedia-viewer) |  |
 |      |  [ ]()  | [Use the Twitch.tv JSON API](./frontend/twitch-client) |  |
 |      |  [ ]()  | [Build a JavaScript Calculator](./frontend/calculator) |  |
 |      |  [ ]()  | [Build a Pomodoro Clock](./frontend/pomodoro-clock) |  |
