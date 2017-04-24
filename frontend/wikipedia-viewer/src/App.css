@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #C84151;
+    font-family: 'Slabo 27px', serif;
+}
+
+.container {
+    margin: 0 auto;
+    width: 960px;
+}
+
+ul {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 30px;
+    border: 1px solid #3E4852;
+    list-style: none;
+    overflow: hidden;
+}
+
+li {
+    border-bottom: 1px solid #3E4852;
+    padding: 15px 30px;
+    position: relative;
+}
+
+li:last-of-type {
+    border: none;
+}
+/*
+li:hover {
+    padding-right: 50px;
+}*/
+
+li:hover a {
+    display: flex;
+    right: 0;
+    width: 50px;
+}
+
+li h3 {
+    color: #C84151;
+    margin-bottom: 10px;
+}
+
+li p {
+    font-size: 16px;
+}
+
+li a {
+    background-color: rgba(200,65,81,1);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    right: -25px;
+    height: 100%;
+    width: 0;
+    transition: all 0.2s ease-in;
+    text-decoration: none;
+    text-align: center;
+}
+
+input {
+    border: 2px solid #3E4852;
+    color: #3E4852;
+    border-radius: 30px;
+    display: block;
+    font-size: 20px;
+    padding: 10px 15px;
+    margin: 30px auto;
+    width: 480px;
+}
+
+input:focus {
+    border-color: #C84151;
+    outline: none;
+}

@@ -11,26 +11,43 @@ class App extends Component {
 
     this.getWiki = this.getWiki.bind(this);
   }
+
   getWiki() {
-    let title = 'Cristiano'
-    fetch(`https://en.wikipedia.org/w/api.php?action=query&titles=${title}&format=json&origin=*`)
+    let query = this.refs.search.value || 'Main Page';
+    fetch('https://en.wikipedia.org/w/api.php?format=json&origin=*&action=query&generator=search&prop=extracts|info&inprop=url&exintro&explaintext&exsentences=1&exlimit=max&gsrsearch='+query)
     .then((response) => {
-      this.setState({wikiSimple:response});
       return response.json()
     }).then((response) => {
       this.setState({wiki:response});
     })
   }
+
+  componentDidMount() {
+    this.getWiki();
+  }
+
   render() {
 
-    let {wiki, wikiSimple} = this.state;
+    let wikiList = [];
+    let {wiki} = this.state;
 
-    console.log(wiki);
-    console.log(wikiSimple);
+    if(wiki){
+
+      let pages = wiki.query.pages;
+      for(let id in pages){
+        var { title, extract, fullurl : url} = pages[id];
+        wikiList.push(<li key={id}> <h3>{title}</h3> <p>{extract}</p> <a target="_blank" href={url}> <i className="fa fa-angle-right fa-2x"></i> </a></li>)
+      }
+      console.log(wiki);
+
+    }
 
     return (
-      <div>
-        <button onClick={ this.getWiki }>Get wiki</button>
+      <div className="container">
+        <input type="text" placeholder="Search wikipedia" ref="search" onChange={ this.getWiki }/>
+        <ul>
+          { wikiList }
+        </ul>
       </div>
     );
   }
